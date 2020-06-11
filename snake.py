@@ -35,7 +35,7 @@ elif color_user[0].lower()=='r':
 else:
 	col = GREEN
 	
-class cube(self):
+class cube(object):
 	rows = 20 #20 rows/columns. Decreasing this number would make it harder and vice versa
 	w = 500 #screen width
 	def __init__(self,start,dirx=0, diry=0, color=(col)):
@@ -67,7 +67,7 @@ class cube(self):
 
 		
 
-class snake(self):
+class snake(object):
 	body = []
 	turns = {}
 
@@ -212,7 +212,7 @@ def main():
 	rows = 20
 	window = pygame.display.set_mode((width,height))
 	s = snake(col, (10,10))
-	if col==RED:
+	if col==RED or col==MAROON:
 		apple_color = GREEN
 	else:
 		apple_color = RED
