@@ -1,5 +1,6 @@
 # Snake
 A basic snake game using pygame
+
 Language: Python
 
 ## To Run:
